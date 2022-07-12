@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+*{
+    font-family: 'Cabin', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+/* 
+
+    ------ NAV ------
+
+*/
+
+nav{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 1.2em;
+    color: white;
+    align-items: center;
+}
+
+
+.logo{
+    font-size: 1.8em;
+}
+
+.menu{
+    list-style: none;
+    
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btnnav{
+    font-size: 1.1em;
+    background-color: #ff1e53e1;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnnav:hover{
+    transition: 0.2s;
+    background-color: #ff1e53b7;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+ color: #ff1e53;
+}
+
+.color1{
+    color: #ff1e53;
+}
+
+/* 
+
+    ------ HOME ------
+
+*/
+
+#home{
+   
+    display: flex;
+    align-items: center;
+    background-image: url('../imgs/background22.jpg');
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.contenth{
+    
+    
+    margin-left: 80px;
+    font-size: 1.8em;
+    color: white;
+}
+
+.contenth > p:nth-child(1){
+    color: #f8c2cff6;
+}
+
+.contenth h1{
+    font-size: 2.9em;
+}
+
+.contenth input{
+    border: none;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+
+.btnh{
+    font-size: 0.7em;
+    background-color: #ff1e53ea;
+    color: white;
+    padding: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    
+}
+
+.btnh:hover{
+    transition: 0.2s;
+    background-color: #ff1e53b7;
+}
+
+.texth{
+    width: 300px;
+    outline: none;
+    padding: 7px;
+}
+
+@media screen and (max-width: 895px){
+    nav{
+        padding: 10px;
+        font-size: 1em;
+        
+    }
+
+    .logo{
+        font-size: 1.4em;
+    }
+
+    .btnnav{
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    #home{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 730px){
+    nav{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        padding: 5px;
+        font-size: 2.5em;
+        color: white;
+        align-items: center;
+        background-color: #08082c;
+        overflow-x: hidden;
+    }
+
+    .logo{
+        font-size: 1.3em;
+    }
+    
+    .menu{
+        list-style: none;
+        
+    }
+
+    .menu li{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .btnnav{
+        font-size: 1em;
+        background-color: #ff1e53e1;
+        border: none;
+        color: white;
+        padding: 8px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #home{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        
+    }
+    
+    .contenth{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+        height: 100%;
+        font-size: 1.7em;
+        color: white;
+        padding-top: 3rem;
+        padding: 50px;
+        
+    }
+    
+    .contenth > p:nth-child(1){
+        color: #f8c2cff6;
+    }
+    
+    .contenth h1{
+        font-size: 2.9em;
+    }
+    
+    .contenth input{
+        border: none;
+        margin-top: 30px;
+        border-radius: 6px;
+    }
+    
+    .btnh{
+        font-size: 0.5em;
+        background-color: #ff1e53ea;
+        color: white;
+        padding: 8px;
+        cursor: pointer;
+    }
+    
+    .btnh:hover{
+        transition: 0.2s;
+        background-color: #ff1e53b7;
+    }
+    
+    .texth{
+        width: 300px;
+        outline: none;
+        padding: 7px;
+    }
+}
+
+/* 
+   ------ SOBRE ------
+*/
+
+#sobre{
+    display: flex;
+    align-items: center;
+    background-color: #08082c;
+    height: 100vh;
+    
+}
+
+.mains{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents{
+    width: 30%;
+    margin: 30px;
+    color: white;
+    font-size: 1.4em;
+    
+}
+
+.contents h1{
+    font-size: 4.2em;
+    font-weight: 100;
+}
+
+.contents h2{
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.imgs{
+    margin: 30px;
+}
+#sobre img{
+    width: 500px;
+    
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(19, 19, 19, 0.699);
+}
+
+@media screen and (max-width: 1300px){
+    #sobre{
+        
+        font-size: 0.75em;
+    }
+    
+    .mains{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .contents h1{
+        font-size: 2.7em;
+    }
+
+    #sobre img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #sobre{
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        background-color: #08082c;
+        height: 100vh;
+        
+    }
+    
+    .mains{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .contents{
+        text-align: center;
+        width: 90%;
+        margin: 0px;
+        color: white;
+        font-size: 1.5em;
+        
+    }
+    
+    .contents h1{
+        font-size: 1.25em;
+        font-weight: 100;
+    }
+    
+    .contents h2{
+        font-size: 1.15em;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    .imgs{
+        margin: 30px;
+    }
+    #sobre img{
+        width: 210px;
+        
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px rgba(19, 19, 19, 0.699);
+    }
+}
+
+/* 
+
+    ------ PROJETOS ------
+
+*/
+#projetos{
+    max-width: 100%;
+    padding-top: 4.9rem;
+    background-color: #08082c;
+    height: 100vh;
+  }
+  
+  #projetos h1{
+    text-align: center;
+    color: #ff1e53;
+    font-size: 3.3em;
+    font-weight: 100;
+    margin-bottom: 40px;
+  }
+
+  
+
+  /* 
+
+    ------ AVISO ------
+
+*/
+#aviso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff1e53;
+    height: 18vh;    
+    font-weight: 100;
+}
+
+@media screen and (max-width: 750px){
+    #aviso{
+        font-size: 0.5em; 
+        max-width: 100%;
+    }
+}
+
+/* 
+
+    ------ CONTATO ------
+
+*/
+#contato{
+    position: relative;
+    
+    background-color: #08082c;
+    height: 100vh;
+    font-size: 1.8em;
+    color: white;
+    padding-top: 7rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#contato h1{
+    text-align: center;
+    color: #ff1e53;
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 100px;
+}
+#contato img{
+    
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+#contato ul{
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 650px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#contato li{
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 750px){
+    #contato{
+        font-size: 1.8em;
+        padding-top: 7rem;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #contato h1{
+        text-align: center;
+        font-size: 2em;
+        font-weight: 100;
+        margin-bottom: 100px;
+    }
+    #contato img{
+        width: 30px;
+        top: 6px;
+        margin-right: 10px;
+    }
+    #contato ul{
+        padding: 30px;
+        border-radius: 10px;
+        width: 95%;
+    }
+    
+    #contato li{
+        margin-bottom: 15px;
+        font-size: 0.65em;
+    }    
+}
+
+
